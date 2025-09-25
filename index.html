@@ -7,20 +7,51 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #1e1e2f, #2d2d44);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f0f1a;
       color: white;
-      text-align: center;
-      padding: 50px;
     }
     header {
-      font-size: 2.5em;
+      background: #1e1e2f;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      color: #5865F2;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
       font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #5865F2;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero {
+      background: linear-gradient(135deg, #1e1e2f, #2d2d44);
+      padding: 80px 20px;
+    }
+    .hero h2 {
+      font-size: 2.5em;
       margin-bottom: 20px;
     }
-    p {
+    .hero p {
       font-size: 1.2em;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
     .button {
       background: #5865F2;
@@ -34,11 +65,52 @@
     .button:hover {
       background: #4752C4;
     }
+    footer {
+      background: #1e1e2f;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #aaa;
+    }
   </style>
 </head>
 <body>
-  <header>Vital Bot</header>
-  <p>The next-generation Discord bot with insane features.</p>
-  <a href="https://discord.com/oauth2/authorize?client_id=YOUR_BOT_ID&scope=bot" class="button">Invite Vital</a>
+
+  <header>
+    <h1>Vital Bot</h1>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#invite">Invite</a>
+      <a href="#support">Support</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>The Next-Generation Discord Bot</h2>
+    <p>Vital brings insane features, advanced moderation, and a sleek experience for your community.</p>
+    <a href="https://discord.com/oauth2/authorize?client_id=YOUR_BOT_ID&scope=bot" class="button">Invite Vital</a>
+  </section>
+
+  <section id="features">
+    <h2>🔥 Features</h2>
+    <p>✔️ Powerful moderation<br>✔️ Music & entertainment<br>✔️ Auto-role & leveling<br>✔️ Ticket & support system</p>
+  </section>
+
+  <section id="invite">
+    <h2>🚀 Get Started</h2>
+    <p>Bring Vital to your server today and experience the difference.</p>
+    <a href="https://discord.com/oauth2/authorize?client_id=YOUR_BOT_ID&scope=bot" class="button">Add to Discord</a>
+  </section>
+
+  <section id="support">
+    <h2>💬 Need Help?</h2>
+    <p>Join our support server for help, updates, and community fun.</p>
+    <a href="https://discord.gg/YOUR_SERVER" class="button">Join Support</a>
+  </section>
+
+  <footer>
+    © 2025 Vital Bot — All Rights Reserved
+  </footer>
+
 </body>
 </html>
